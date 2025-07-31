@@ -1,13 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>West Texas Transport | Home</title>
-  <meta name="description" content="Gas tank and hazardous material transport in Texas and beyond.">
-  <meta name="keywords" content="Gas Transport, HAZMAT, Fuel Delivery, West Texas">
+  <meta name="description" content="Certified gas tank and HAZMAT transport company based in El Paso, Texas. Secure, timely fuel delivery with professional route planning.">
+  <meta name="keywords" content="Gas Transport, HAZMAT, El Paso, Fuel Delivery, West Texas Trucking">
   <meta name="author" content="West Texas Transport">
+  <meta property="og:title" content="West Texas Transport">
+  <meta property="og:description" content="Fuel tank and HAZMAT delivery across Texas and beyond.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://leonardo-chav3z.github.io/West-Texas-Gas/preview.jpg">
+  <meta property="og:url" content="https://leonardo-chav3z.github.io/West-Texas-Gas/">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("7pL4E242qS0KRVX2f"); // Replace with your public key
+    })();
+    function sendEmail(e) {
+      e.preventDefault();
+      emailjs.sendForm('testsite', 'YOUR_TEMPLATE_ID', e.target) // Replace YOUR_TEMPLATE_ID with actual ID
+        .then(() => {
+          alert('Message sent successfully!');
+          e.target.reset();
+        }, (error) => {
+          alert('Failed to send message: ' + JSON.stringify(error));
+        });
+    }
+  </script>
   <style>
     html { scroll-behavior: smooth; }
     body {
@@ -24,26 +47,20 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
+    header h1 { margin: 0; font-size: 1.8em; }
     nav a {
       color: white;
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      color: #ffcc00;
-    }
+    nav a:hover { color: #ffcc00; }
     .hero {
       background-color: #0077aa;
       color: white;
       text-align: center;
       padding: 100px 40px;
     }
-
     .hero h2 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -123,6 +140,7 @@
     <a href="#services">Services</a>
     <a href="#booking">Booking</a>
     <a href="#contact">Contact</a>
+    <a href="es.html">Español</a>
   </nav>
 </header>
 
@@ -154,12 +172,12 @@
 
 <section id="booking" class="section">
   <h2>Request a Quote</h2>
-  <form action="#" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="company" placeholder="Company Name">
-    <textarea name="details" placeholder="Describe your transport needs..." rows="5"></textarea>
-    <button type="submit">Submit Request</button>
+  <form onsubmit="sendEmail(event)">
+    <input type="text" name="from_name" placeholder="Your Full Name" required />
+    <input type="email" name="from_email" placeholder="Your Email Address" required />
+    <input type="text" name="company" placeholder="Company Name" />
+    <textarea name="message" placeholder="Describe your transport needs..." rows="5" required></textarea>
+    <button type="submit">Send Message</button>
   </form>
 </section>
 
@@ -181,4 +199,3 @@
 
 </body>
 </html>
-
