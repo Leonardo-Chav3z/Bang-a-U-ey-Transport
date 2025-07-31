@@ -4,9 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>West Texas Transport | Home</title>
-  <meta name="description" content="Gas tank and hazardous material transport in Texas and beyond.">
-  <meta name="keywords" content="Gas Transport, HAZMAT, Fuel Delivery, West Texas">
+  <meta name="description" content="Certified gas tank and HAZMAT transport company based in El Paso, Texas. Secure, timely fuel delivery with professional route planning.">
+  <meta name="keywords" content="Gas Transport, HAZMAT, El Paso, Fuel Delivery, West Texas Trucking">
   <meta name="author" content="West Texas Transport">
+  <meta property="og:title" content="West Texas Transport">
+  <meta property="og:description" content="Fuel tank and HAZMAT delivery across Texas and beyond.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://leonardo-chav3z.github.io/West-Texas-Gas/preview.jpg">
+  <meta property="og:url" content="https://leonardo-chav3z.github.io/West-Texas-Gas/">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
@@ -38,10 +44,10 @@
       color: #ffcc00;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1606851091791-fd57f3e1f161?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background-color: #0077aa;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 100px 40px;
     }
     .hero h2 {
       font-size: 2.5em;
@@ -118,37 +124,43 @@
 <header>
   <h1>West Texas Transport</h1>
   <nav>
-    <a href="home.html">Home</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#booking">Booking</a>
     <a href="#contact">Contact</a>
+    <a href="es.html">Español</a>
   </nav>
 </header>
 
 <div class="hero">
-  <h2>Safe, Certified Fuel Transport</h2>
-  <p>From refineries to your site — fast, reliable, HAZMAT-compliant delivery.</p>
+  <h2>Reliable Gas Tank Transport</h2>
+  <p>Secure. Timely. Compliant. We move your fuel tanks safely anywhere you need.</p>
 </div>
 
-<section id="services" class="section">
-  <h2>What We Do</h2>
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>West Texas Transport is a certified fuel tank transport provider specializing in the secure delivery of gas tanks and hazardous materials across regional and national routes. With a modern fleet of safety-compliant trucks and trained drivers, we ensure your cargo arrives safely, every time.</p>
+</section>
+
+<section id="services" class="section alt">
+  <h2>Our Services</h2>
   <div class="card">
-    <h3>Gas Tank & Fuel Delivery</h3>
-    <p>Our trained fleet hauls pressurized or liquid gas tanks with full safety compliance.</p>
+    <h3>Bulk Fuel Tank Transport</h3>
+    <p>We move large gas tanks from refineries to storage or distribution centers with full regulatory compliance.</p>
   </div>
   <div class="card">
-    <h3>HAZMAT-Certified Operations</h3>
-    <p>All drivers are certified in handling hazardous materials for peace of mind.</p>
+    <h3>Hazardous Material Handling</h3>
+    <p>Our drivers are HAZMAT certified, ensuring safe and lawful handling of pressurized and flammable tanks.</p>
   </div>
   <div class="card">
-    <h3>Scheduled + On-Demand Routes</h3>
-    <p>Flexible delivery options across the state or on custom long-haul routes.</p>
+    <h3>Custom Route Planning</h3>
+    <p>We plan efficient, secure routes based on your time and safety needs — city or remote delivery supported.</p>
   </div>
 </section>
 
-<section id="booking" class="section alt">
+<section id="booking" class="section">
   <h2>Request a Quote</h2>
-  <form action="#" method="POST">
+  <form action="https://formspree.io/f/mqkrpjne" method="POST">
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="email" name="email" placeholder="Email Address" required>
     <input type="text" name="company" placeholder="Company Name">
@@ -157,7 +169,7 @@
   </form>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section alt">
   <h2>Contact Us</h2>
   <p><strong>Email:</strong> info@westtexastransport.com<br>
      <strong>Phone:</strong> (915) 500-9382<br>
@@ -167,7 +179,10 @@
 
 <footer>
   &copy; 2025 West Texas Transport. All rights reserved.<br>
-  <a href="#services">Services</a> | <a href="#booking">Booking</a> | <a href="#contact">Contact</a>
+  <a href="#about">About</a> |
+  <a href="#services">Services</a> |
+  <a href="#booking">Booking</a> |
+  <a href="#contact">Contact</a>
 </footer>
 
 </body>
