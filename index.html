@@ -1,28 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bang a U-ey Transport | Home</title>
-  <meta name="description" content="Certified gas tank and HAZMAT transport company based in El Paso, Texas. Secure, timely fuel delivery with professional route planning.">
-  <meta name="keywords" content="Gas Transport, HAZMAT, El Paso, Fuel Delivery, West Texas Trucking">
+  <meta name="description" content="Certified HAZMAT and freight transport company based in El Paso, TX. Fuel delivery, logistics, and professional drivers.">
+  <meta name="keywords" content="Transport, HAZMAT, El Paso, Freight, Fuel Delivery, Logistics">
   <meta name="author" content="Bang a U-ey Transport">
-  <meta property="og:title" content="Bang a U-ey Transport">
-  <meta property="og:description" content="Fuel tank and HAZMAT delivery across Texas and beyond.">
-  <meta property="og:type" content="website">
   <meta property="og:image" content="https://leonardo-chav3z.github.io/West-Texas-Gas/preview.jpg">
-  <meta property="og:url" content="https://leonardo-chav3z.github.io/West-Texas-Gas/">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
-    (function(){
-      emailjs.init("7pL4E242qS0KRVX2f"); // Replace with your public key
-    })();
+    (function(){ emailjs.init("7pL4E242qS0KRVX2f"); })();
     function sendEmail(e) {
       e.preventDefault();
-      emailjs.sendForm('testsite', 'template_orc00ji', e.target) // Replace template_orc00ji with actual ID
+      emailjs.sendForm('testsite', 'template_orc00ji', e.target)
         .then(() => {
           alert('Message sent successfully!');
           e.target.reset();
@@ -32,102 +25,18 @@
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
-    }
-    header {
-      background: #004466;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    header h1 { margin: 0; font-size: 1.8em; }
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover { color: #ffcc00; }
-    .hero {
-      background-color: #0077aa;
-      color: white;
-      text-align: center;
-      padding: 100px 40px;
-    }
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .section {
-      padding: 60px 40px;
-      background: white;
-    }
-    .section.alt {
-      background: #f9f9f9;
-    }
-    .card {
-      background: white;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-left: 5px solid #0077aa;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.01);
-    }
-    iframe.map {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1em;
-    }
-    form button {
-      background: #0077aa;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      font-size: 1em;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      background: #004466;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    footer a {
-      color: #ffcc00;
-      margin: 0 10px;
-      text-decoration: none;
-    }
+    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f4f4f4; }
+    header, footer { background: #004466; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero, .section { padding: 60px 40px; text-align: center; }
+    .hero { background: #0077aa; color: white; }
+    .card { background: white; padding: 20px; margin: 20px auto; border-left: 5px solid #0077aa; max-width: 800px; }
+    form input, form textarea, form select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    form button { background: #0077aa; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    iframe.map { width: 100%; height: 300px; border: none; margin-top: 20px; }
+    .chat-link { position: fixed; bottom: 20px; right: 20px; background: #25d366; padding: 10px 15px; border-radius: 5px; color: white; font-weight: bold; text-decoration: none; }
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav a {
-        margin: 10px 0 0;
-        display: block;
-      }
-      .hero h2 {
-        font-size: 1.8em;
-      }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
 </head>
@@ -138,68 +47,68 @@
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#booking">Booking</a>
+    <a href="#quote">Quote</a>
+    <a href="#apply">Apply</a>
     <a href="#contact">Contact</a>
     <a href="es.html">Español</a>
   </nav>
 </header>
 
 <div class="hero">
-  <h2>Reliable Transport</h2>
-  <p>Secure. Timely. Compliant. We move your fuel tanks safely anywhere you need.</p>
+  <h2>Reliable Nationwide Transport</h2>
+  <p>HAZMAT certified. Fully insured. Trusted routes across Texas and the U.S.</p>
 </div>
 
 <section id="about" class="section">
   <h2>About Us</h2>
-  <p>Bang a U-ey Transport is a certified fuel tank transport provider specializing in the secure delivery of gas tanks and hazardous materials across regional and national routes. With a modern fleet of safety-compliant trucks and trained drivers, we ensure your cargo arrives safely, every time.</p>
+  <p>Bang a U-ey Transport delivers fuel and freight with precision and care. Based in El Paso, we serve clients across Texas and the Southwest.</p>
 </section>
 
-<section id="services" class="section alt">
+<section id="services" class="section">
   <h2>Our Services</h2>
-  <div class="card">
-    <h3>Bulk Fuel Tank Transport</h3>
-    <p>We move large gas tanks from refineries to storage or distribution centers with full regulatory compliance.</p>
-  </div>
-  <div class="card">
-    <h3>Hazardous Material Handling</h3>
-    <p>Our drivers are HAZMAT certified, ensuring safe and lawful handling of pressurized and flammable tanks.</p>
-  </div>
-  <div class="card">
-    <h3>Custom Route Planning</h3>
-    <p>We plan efficient, secure routes based on your time and safety needs — city or remote delivery supported.</p>
-  </div>
-    </div>
-    <div class="card">
-    <h3>Custom: Aver que mas </h3>
-    <p> blah blah blah.</p>
-  </div>
+  <div class="card"><h3>Fuel Delivery</h3><p>Licensed transport of gasoline and diesel with HAZMAT-compliant drivers.</p></div>
+  <div class="card"><h3>Freight Hauling</h3><p>Dry van and bulk delivery across major routes nationwide.</p></div>
+  <div class="card"><h3>Custom Routes</h3><p>We optimize delivery based on location, urgency, and safety standards.</p></div>
 </section>
 
-<section id="booking" class="section">
-  <h2>Request a Quote</h2>
+<section id="quote" class="section">
+  <h2>Instant Quote Estimator</h2>
   <form onsubmit="sendEmail(event)">
-    <input type="text" name="from_name" placeholder="Your Full Name" required />
-    <input type="email" name="from_email" placeholder="Your Email Address" required />
-    <input type="text" name="company" placeholder="Company Name" />
-    <textarea name="message" placeholder="Describe your transport needs..." rows="5" required></textarea>
-    <button type="submit">Send Message</button>
+    <input type="text" name="origin" placeholder="Origin City / ZIP" required>
+    <input type="text" name="destination" placeholder="Destination City / ZIP" required>
+    <input type="number" name="weight" placeholder="Weight (lbs)">
+    <select name="type">
+      <option>Fuel Tank</option>
+      <option>Freight</option>
+      <option>HAZMAT</option>
+    </select>
+    <textarea name="details" placeholder="Additional details..."></textarea>
+    <button type="submit">Estimate</button>
   </form>
 </section>
 
-<section id="contact" class="section alt">
-  <h2>Contact Us</h2>
-  <p><strong>Email:</strong> info@bangau-ey.com<br>
-     <strong>Phone:</strong> (915) 500-9382<br>
-     <strong>Address:</strong> 2120 E. Paisano, Suite 212, El Paso, TX 79905</p>
-  <iframe class="map" src="https://www.google.com/maps?q=2120+E.+Paisano,+Suite+212,+El+Paso,+TX+79905&output=embed"></iframe>
+<section id="apply" class="section">
+  <h2>Driver Application</h2>
+  <form action="https://formspree.io/f/xnqegpzd" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="cdl" placeholder="CDL Number" required>
+    <input type="text" name="experience" placeholder="Years of Experience">
+    <textarea name="message" placeholder="Tell us more about your background..." rows="5"></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
 </section>
 
+<section id="contact" class="section">
+  <h2>Contact Info</h2>
+  <p>Email: info@bangau-ey.com<br>Phone: (915) 500-9382<br>Address: 2120 E. Paisano, Suite 212, El Paso, TX 79905</p>
+  <iframe class="map" src="https://maps.google.com/maps?q=2120+E.+Paisano,+El+Paso,+TX+79905&output=embed"></iframe>
+</section>
+
+<a class="chat-link" href="https://wa.me/19155009382" target="_blank">Chat with us</a>
+
 <footer>
-  &copy; 2025 Bang a U-ey Transport. All rights reserved.<br>
-  <a href="#about">About</a> |
-  <a href="#services">Services</a> |
-  <a href="#booking">Booking</a> |
-  <a href="#contact">Contact</a>
+  &copy; 2025 Bang a U-ey Transport · El Paso, TX
 </footer>
 
 </body>
