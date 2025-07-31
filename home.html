@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>West Texas Transport | Home</title>
+  <meta name="description" content="Gas tank and hazardous material transport in Texas and beyond.">
+  <meta name="keywords" content="Gas Transport, HAZMAT, Fuel Delivery, West Texas">
+  <meta name="author" content="West Texas Transport">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #004466;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606851091791-fd57f3e1f161?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 60px 40px;
+      background: white;
+    }
+    .section.alt {
+      background: #f9f9f9;
+    }
+    .card {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #0077aa;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.01);
+    }
+    iframe.map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    form button {
+      background: #0077aa;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #004466;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 10px 0 0;
+        display: block;
+      }
+      .hero h2 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>West Texas Transport</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Safe, Certified Fuel Transport</h2>
+  <p>From refineries to your site — fast, reliable, HAZMAT-compliant delivery.</p>
+</div>
+
+<section id="services" class="section">
+  <h2>What We Do</h2>
+  <div class="card">
+    <h3>Gas Tank & Fuel Delivery</h3>
+    <p>Our trained fleet hauls pressurized or liquid gas tanks with full safety compliance.</p>
+  </div>
+  <div class="card">
+    <h3>HAZMAT-Certified Operations</h3>
+    <p>All drivers are certified in handling hazardous materials for peace of mind.</p>
+  </div>
+  <div class="card">
+    <h3>Scheduled + On-Demand Routes</h3>
+    <p>Flexible delivery options across the state or on custom long-haul routes.</p>
+  </div>
+</section>
+
+<section id="booking" class="section alt">
+  <h2>Request a Quote</h2>
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="company" placeholder="Company Name">
+    <textarea name="details" placeholder="Describe your transport needs..." rows="5"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> info@westtexastransport.com<br>
+     <strong>Phone:</strong> (915) 500-9382<br>
+     <strong>Address:</strong> 123 Patriot Blvd, El Paso, TX</p>
+  <iframe class="map" src="https://www.google.com/maps?q=123+Patriot+Blvd,+El+Paso,+TX&output=embed"></iframe>
+</section>
+
+<footer>
+  &copy; 2025 West Texas Transport. All rights reserved.<br>
+  <a href="#services">Services</a> | <a href="#booking">Booking</a> | <a href="#contact">Contact</a>
+</footer>
+
+</body>
+</html>
