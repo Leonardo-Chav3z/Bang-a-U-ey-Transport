@@ -22,7 +22,7 @@
     })();
     function sendEmail(e) {
       e.preventDefault();
-      emailjs.sendForm('testsite', 'YOUR_TEMPLATE_ID', e.target) // Replace YOUR_TEMPLATE_ID with actual ID
+      emailjs.sendForm('testsite', 'template_orc00ji', e.target) // Replace template_orc00ji with actual ID
         .then(() => {
           alert('Message sent successfully!');
           e.target.reset();
